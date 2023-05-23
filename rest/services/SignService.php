@@ -7,20 +7,13 @@ class SignService {
     public function __construct(){
         $this->dao = new SignDao();
     }
-
-    /** TODO
-    * Implement service method to return detailed accounts
-    */
     
-    public function login(){
+    public function login($username,$password){
+        return $this->dao->login($username,$password);
+      }
 
-        return $this->dao->login();
-
-    }
-
-
-    public function register(){
-        return $this->dao->register();
+    public function register($name,$username,$password){
+        return $this->dao->register($name,$username,$password);
       }
 
 

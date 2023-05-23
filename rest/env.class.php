@@ -4,11 +4,11 @@ class Config
 {
     public static function DB_HOST()
     {
-        return Config::get_env("DB_HOST", "");
+        return Config::get_env("DB_HOST", "localhost");
     }
     public static function DB_USERNAME()
     {
-        return Config::get_env("DB_USERNAME", "");
+        return Config::get_env("DB_USERNAME", "root");
     }
     public static function DB_PASSWORD()
     {
@@ -16,7 +16,7 @@ class Config
     }
     public static function DB_SCHEME()
     {
-        return Config::get_env("DB_SCHEME", "");
+        return Config::get_env("DB_SCHEME", "sign-language");
     }
     public static function DB_PORT()
     {

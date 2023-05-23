@@ -73,7 +73,7 @@
         
           <!-- Register buttons -->
           <div class="text-center">
-            <p>Not a member? <a href="register.html">Register</a></p>
+            <p>Not a member? <a href="register_member.html">Register</a></p>
             <p>or sign up with:</p>
             <button type="button" class="btn btn-link btn-floating mx-1">
               <i class="fab fa-facebook-f"></i>
@@ -110,11 +110,15 @@ function login() {
         dataType: "json",
 
         success: function (data) {
-          console.log(data);
-          /*   localStorage.setItem('username', data.username);
-            localStorage.setItem('password', data.password);
-            localStorage.setItem('secret', data.secret); */
-            //window.location.replace("home.html");
+          console.log(data[0]['username']);
+          if(data[0]['username']!=null){
+            window.location.replace("home.html");
+          }
+          else{
+            alert('Neispravni pristupni podaci!');
+            location.reload();
+          }
+ 
         }
     
     });
