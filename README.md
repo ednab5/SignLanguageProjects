@@ -8,7 +8,7 @@ the /login endpoint (works with username = demo and password = demo)
 
 the /register endpoint 
 
-https://sign-language-projectnew.onrender.com/
+https://sign-language-project.onrender.com/
 
 Edna Bogdanić,
 Student
