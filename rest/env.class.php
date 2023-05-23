@@ -4,23 +4,23 @@ class Config
 {
     public static function DB_HOST()
     {
-        return Config::get_env("DB_HOST", "localhost");
+        return Config::get_env("DB_HOST", "sql7.freemysqlhosting.net");
     }
     public static function DB_USERNAME()
     {
-        return Config::get_env("DB_USERNAME", "root");
+        return Config::get_env("DB_USERNAME", "sql7620435");
     }
     public static function DB_PASSWORD()
     {
-        return Config::get_env("DB_PASSWORD", "");
+        return Config::get_env("DB_PASSWORD", "mCDqCLpp64");
     }
     public static function DB_SCHEME()
     {
-        return Config::get_env("DB_SCHEME", "sign-language");
+        return Config::get_env("DB_SCHEME", "sql7620435");
     }
     public static function DB_PORT()
     {
-        return Config::get_env("DB_PORT", "");
+        return Config::get_env("DB_PORT", "3306");
     }
   //ovo nismo dirali!!
     public static function jwtSecret()
