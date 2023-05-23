@@ -20,7 +20,7 @@ class Config
     }
     public static function DB_PORT()
     {
-        return Config::get_env("DB_PORT", "3306");
+        return Config::get_env("DB_PORT", "");
     }
   //ovo nismo dirali!!
     public static function jwtSecret()
