@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+            <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
+                <i class="flaticon-043-teddy-bear"></i>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav font-weight-bold mx-auto py-0">
+                    <a href="homepage.html" class="nav-item nav-link ">Dictionary</a>
+                    <a href="customer_support.html" class="nav-item nav-link ">Customer Support</a>
+                </div>
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link">
+                        <i class="fas fa-cog" style="font-size:35px"></i>
+                    </a>
+                </div>
+                <button type="button" class="btn btn-danger" id="logoutButton">Logout</button>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <div>
+        <h1 class="mt-4 ml-3">SETTINGS</h1>
+        <hr />
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-5">
+                <form id="settingsForm">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName">
+                        <div id="firstNameError" class="text-danger"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName">
+                        <div id="lastNameError" class="text-danger"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email">
+                        <div id="emailError" class="text-danger"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password">
+                        <div id="passwordError" class="text-danger"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <button type="button" class="btn btn-secondary" id="cancelButton">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/editUserInfo.js"></script>
+    <script src="js/validations/settingsValidation.js"></script>
+    <script src="js/logout.js"></script>
+</body>
+
+</html>
